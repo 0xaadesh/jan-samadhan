@@ -15,7 +15,7 @@
     "db:seed": "bun run scripts/seed.ts",
     "make-admin": "bun run scripts/make-admin.ts",
     "seed:users": "bun run scripts/seed-users.ts",
-    "postinstall": "bun run db:migrate && bun run db:generate"
+    "postinstall": "bun run db:generate && bun run db:migrate"
   },
   "dependencies": {
     "@ai-sdk/groq": "^4.0.35",
