@@ -14,7 +14,8 @@
     "db:setup": "bun run scripts/enable-pgvector.ts && drizzle-kit push && bun run scripts/seed.ts",
     "db:seed": "bun run scripts/seed.ts",
     "make-admin": "bun run scripts/make-admin.ts",
-    "seed:users": "bun run scripts/seed-users.ts"
+    "seed:users": "bun run scripts/seed-users.ts",
+    "postinstall": "bun run db:push"
   },
   "dependencies": {
     "@ai-sdk/groq": "^4.0.35",
